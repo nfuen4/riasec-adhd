@@ -256,7 +256,7 @@ export default function App() {
         id="lifecycle-pm"
         tag="Part V — Applied Framework"
         title="Project Management for Lifecycle Marketing"
-        subtitle="A five-phase loop built around the ADHD activation profile, with worked examples from onboarding to platform migration."
+        subtitle="The PMBOK Guide's value-delivery model and principles, applied to lifecycle marketing, with four worked projects from a send-time test to an ESP migration."
       >
         <LifecyclePM />
       </Sect>
