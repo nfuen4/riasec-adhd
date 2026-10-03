@@ -131,3 +131,59 @@ a:hover { opacity: .8; }
    FOOTER
 ────────────────────────────────────────── */
 .site-footer { text-align:center; padding:3rem 2rem; border-top:1px solid var(--border); color:var(--text-secondary); font-size:.875rem; }
+
+/* ──────────────────────────────────────────
+   LIFECYCLE PM (Part V)
+────────────────────────────────────────── */
+.lpm__subhead { font-size: 1.5rem; font-weight: 800; letter-spacing: -.01em; margin: 4rem 0 .5rem; }
+.lpm__subhead:first-child { margin-top: 0; }
+.lpm__lede   { color: var(--text-secondary); max-width: 680px; margin-bottom: 1.75rem; }
+.lpm__strong { color: var(--text-primary); font-weight: 700; }
+
+.lpm__phases { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
+@media (max-width: 1100px) { .lpm__phases { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px)  { .lpm__phases { grid-template-columns: 1fr; } }
+.lpm__phase-head { display: flex; align-items: center; justify-content: space-between; }
+.lpm__num      { font-size: .7rem; font-weight: 800; color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+.lpm__meta     { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+.lpm__timebox  { font-size: .75rem; color: var(--text-secondary); }
+.lpm__question { font-size: .9rem; flex: 0 0 auto; color: var(--text-primary); }
+.lpm__phase .callout { font-size: .8rem; padding: .75rem 1rem; }
+
+.lpm__brief { gap: 0; padding: .5rem 1.75rem; }
+.lpm__brief-row { display: grid; grid-template-columns: 140px 1fr; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--border); }
+.lpm__brief-row:last-child { border-bottom: none; }
+.lpm__brief-key { font-weight: 700; color: var(--accent-magenta); font-size: .85rem; text-transform: uppercase; letter-spacing: .08em; }
+.lpm__brief-val { color: var(--text-secondary); font-size: .95rem; }
+@media (max-width: 640px) { .lpm__brief-row { grid-template-columns: 1fr; gap: .25rem; } }
+
+.lpm__tabs { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.lpm__tab {
+  font: inherit; font-size: .875rem; font-weight: 600; cursor: pointer;
+  color: var(--text-secondary); background: var(--surface);
+  border: 1px solid var(--border); border-radius: 30px; padding: .5rem 1.1rem;
+  transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease);
+}
+.lpm__tab:hover { background: var(--surface-hover); color: var(--text-primary); }
+.lpm__tab:focus-visible { outline: 2px solid var(--accent-amber); outline-offset: 2px; }
+.lpm__tab--active { color: var(--text-primary); border-color: var(--accent-magenta); background: rgba(212,110,172,0.12); }
+
+.lpm__panel { gap: 1.5rem; }
+.lpm__panel:hover { transform: none; }
+.lpm__chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.lpm__cols  { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media (max-width: 900px) { .lpm__cols { grid-template-columns: 1fr; } }
+.lpm__dl dt { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--accent-coral); margin-top: .9rem; }
+.lpm__dl dd { font-size: .92rem; color: var(--text-secondary); line-height: 1.6; }
+.lpm__slices { list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-top: .75rem; }
+.lpm__slices li { display: flex; flex-direction: column; gap: .15rem; font-size: .92rem; color: var(--text-secondary); padding-left: 1rem; border-left: 2px solid var(--border-hover); }
+.lpm__when { font-weight: 700; color: var(--text-primary); }
+.lpm__ph   { font-size: .75rem; color: var(--accent-amber); }
+.lpm__load { margin-top: .75rem; }
+
+.lpm__tablewrap { overflow-x: auto; }
+.lpm__table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.lpm__table th { text-align: left; font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--text-secondary); padding: .5rem .75rem; border-bottom: 1px solid var(--border-hover); }
+.lpm__table td { padding: .75rem; color: var(--text-secondary); border-bottom: 1px solid var(--border); }
+.lpm__table td:nth-child(2) { color: var(--text-primary); font-weight: 600; }
+.lpm__score { color: var(--accent-amber); font-weight: 800; font-variant-numeric: tabular-nums; }

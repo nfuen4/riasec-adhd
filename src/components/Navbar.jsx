@@ -5,6 +5,7 @@ const links = [
   { href: '#riasec',    label: 'RIASEC Profiles' },
   { href: '#adhd-lens', label: 'ADHD Lens'        },
   { href: '#avoid',     label: 'Avoid & Restructure' },
+  { href: '#lifecycle-pm', label: 'Lifecycle PM' },
 ];
 
 export default function Navbar() {

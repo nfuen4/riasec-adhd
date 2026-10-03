@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import LifecyclePM from './components/LifecyclePM';
 import './index.css';
 import {
   Wrench, Search, Palette, Users, TrendingUp, Settings,
@@ -248,6 +249,16 @@ export default function App() {
             </Card>
           ))}
         </div>
+      </Sect>
+
+      {/* ── SECTION 4: Applied Framework ── */}
+      <Sect
+        id="lifecycle-pm"
+        tag="Part V — Applied Framework"
+        title="Project Management for Lifecycle Marketing"
+        subtitle="A five-phase loop built around the ADHD activation profile, with worked examples from onboarding to platform migration."
+      >
+        <LifecyclePM />
       </Sect>
 
       <footer className="site-footer">
